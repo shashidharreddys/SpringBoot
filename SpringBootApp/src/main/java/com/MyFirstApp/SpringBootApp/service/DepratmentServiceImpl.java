@@ -13,14 +13,14 @@ public class DepratmentServiceImpl implements DepartmentServiceInterface {
 
 	@Autowired
 	private DepartmentRepoInterface DeptRepo;
-	
-public Department saveDept(Department dept) {
+
+	public Department saveDept(Department dept) {
 		return DeptRepo.save(dept);
 	}
 
-@Override
-public List<Department> getDepts() {
-	// TODO Auto-generated method stub
-	return DeptRepo.findAll();
-}
+	@Override
+	public List<Department> getDepts() {
+		// TODO Auto-generated method stub
+		return DeptRepo.findAll();
+	}
 }
